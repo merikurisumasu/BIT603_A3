@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UsersAddScreen">
+
+    <EditText
+        android:id="@+id/editTextIAddEID"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:hint="@string/EID"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAddEID"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddEID" />
+
+    <TextView
+        android:id="@+id/textViewIAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/AddUserScreen"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewAddUsername"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/Username"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIAdd" />
+
+    <TextView
+        android:id="@+id/textViewAddPassword"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/Password"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddUsername" />
+
+    <TextView
+        android:id="@+id/textViewAddDOB"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/DOB"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddPassword" />
+
+    <TextView
+        android:id="@+id/textViewAddEID"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/EID"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddDOB" />
+
+    <TextView
+        android:id="@+id/textViewAddPhone"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/PhoneNum"
+        android:textSize="15sp"
+        app:layout_constraintStart_toEndOf="@+id/editTextIAddUsername"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIAdd" />
+
+    <EditText
+        android:id="@+id/editTextIAddPhone"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:hint="@string/PhoneNum"
+        android:inputType="phone"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAddPhone"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddPhone" />
+
+    <Button
+        android:id="@+id/buttonIAddClear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/Clear"
+        app:layout_constraintEnd_toEndOf="@+id/buttonIAddUser"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonIAddUser"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIAddUser" />
+
+    <EditText
+        android:id="@+id/editTextIAddAddress"
+        android:layout_width="183dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:hint="@string/Address"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAddAddress"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddAddress" />
+
+    <Button
+        android:id="@+id/buttonIAddUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="4dp"
+        android:text="@string/AddUserScreen"
+        app:layout_constraintEnd_toEndOf="@+id/editTextIAddAddress"
+        app:layout_constraintTop_toBottomOf="@+id/editTextIAddAddress" />
+
+    <TextView
+        android:id="@+id/textViewAddAddress"
+        android:layout_width="60dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/Address"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewAddPhone"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAddPhone" />
+
+    <EditText
+        android:id="@+id/editTextIAddUsername"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:hint="@string/Username"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAddUsername"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddUsername" />
+
+    <EditText
+        android:id="@+id/editTextIAddPassword"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:hint="@string/Password"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAddPassword"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddPassword" />
+
+    <EditText
+        android:id="@+id/editTextIAddDOB"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:hint="@string/DOBFormat"
+        android:inputType="date"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewAddDOB"
+        app:layout_constraintStart_toEndOf="@+id/textViewAddDOB" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

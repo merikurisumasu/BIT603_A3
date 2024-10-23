@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryAddItemsScreen">
+
+    <EditText
+        android:id="@+id/editTextIInventoryAddName"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:inputType="textPersonName"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewInventoryAddNameLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewInventoryAddNameLabel" />
+
+    <EditText
+        android:id="@+id/editTextIInventoryAddQuantity"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:foregroundGravity="bottom"
+        android:inputType="number"
+        android:textSize="15sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/textViewInventoryAddQuantityLabel"
+        app:layout_constraintStart_toEndOf="@+id/textViewInventoryAddQuantityLabel" />
+
+    <TextView
+        android:id="@+id/textViewInventoryAddItemTypeLabel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/InventoryItemType"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInventoryAddQuantityLabel" />
+
+    <TextView
+        android:id="@+id/textViewInventoryAddNameLabel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/InventoryName"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryAddItemTitle" />
+
+    <TextView
+        android:id="@+id/textViewInventoryAddQuantityLabel"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:gravity="bottom"
+        android:text="@string/InventoryQuantity"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewInventoryAddNameLabel" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryAddItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/InventoryAddItem"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Spinner
+        android:id="@+id/spinnerIInventoryItemTypes"
+        android:layout_width="180dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintStart_toEndOf="@+id/textViewInventoryAddItemTypeLabel"
+        app:layout_constraintTop_toTopOf="@+id/textViewInventoryAddItemTypeLabel" />
+
+    <Button
+        android:id="@+id/buttonIInventoryAdd"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/InventoryAddItem"
+        app:layout_constraintEnd_toEndOf="@+id/spinnerIInventoryItemTypes"
+        app:layout_constraintStart_toStartOf="@+id/spinnerIInventoryItemTypes"
+        app:layout_constraintTop_toBottomOf="@+id/spinnerIInventoryItemTypes" />
+
+    <Button
+        android:id="@+id/buttonIInvetoryClear"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/Clear"
+        app:layout_constraintEnd_toEndOf="@+id/buttonIInventoryAdd"
+        app:layout_constraintStart_toStartOf="@+id/buttonIInventoryAdd"
+        app:layout_constraintTop_toBottomOf="@+id/buttonIInventoryAdd" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

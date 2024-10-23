@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InventoryStatusScreen">
+
+    <TextView
+        android:id="@+id/textViewIInventoryStatusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:text="@string/InventoryStatus"
+        android:textIsSelectable="false"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listViewIInventoryList"
+        android:layout_width="227dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:background="#B4BEF8"
+        android:choiceMode="singleChoice"
+        android:dividerHeight="5dp"
+        android:fadeScrollbars="false"
+        android:listSelector="@android:drawable/divider_horizontal_textfield"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryStatusLabel" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/InventoryName"
+        app:layout_constraintStart_toEndOf="@+id/listViewIInventoryList"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryStatusLabel" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewIInventoryNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryNameLabel" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryQuantityLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/InventoryQuantity"
+        app:layout_constraintStart_toStartOf="@+id/textViewIInventoryName"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryName" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewIInventoryQuantityLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryQuantityLabel" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryTypeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/InventoryItemType"
+        app:layout_constraintStart_toStartOf="@+id/textViewIInventoryQuantity"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryQuantity" />
+
+    <TextView
+        android:id="@+id/textViewIInventoryType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewIInventoryTypeLabel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewIInventoryTypeLabel" />
+
+    <Button
+        android:id="@+id/buttonIInventoryNext"
+        android:layout_width="103dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="@string/Next"
+        app:layout_constraintBottom_toTopOf="@+id/buttonIInventoryPrev"
+        app:layout_constraintEnd_toEndOf="@+id/buttonIInventoryPrev" />
+
+    <Button
+        android:id="@+id/buttonIInventoryPrev"
+        android:layout_width="104dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/Prev"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

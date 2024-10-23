@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Kiwi Cookies and Cakes</string>
+
+    <string name="Username">Username</string>
+    <string name="Password">Password</string>
+    <string name="DOB">Date of Birth</string>
+    <string name="DOBFormat">DD/MM/YYYY</string>
+    <string name="EID">Employee ID</string>
+    <string name="PhoneNum">Phone</string>
+    <string name="Address">Address</string>
+
+    <string name="Login">Login</string>
+    <string name="Clear">Clear</string>
+    <string name="LoginText">Member Login</string>
+    <string name="ManageUserScreen">Manage Users</string>
+    <string name="ViewUserScreen">View Users</string>
+    <string name="AddUserScreen">Add User</string>
+    <string name="RemoveUserScreen">Remove User</string>
+    <string name="Logout">Logout</string>
+
+    <string name="InventoryMenu">Inventory Menu</string>
+    <string name="InventoryStatus">Inventory Status</string>
+    <string name="InventoryAddItem">Add Item</string>
+    <string name="InventoryClearItems">Clear Items</string>
+    <string name="InventoryAddTestItems">Add Test Items</string>
+
+    <string name="InventoryName">Name</string>
+    <string name="InventoryQuantity">Quantity</string>
+    <string name="InventoryItemType">Item Type</string>
+
+    <string name="Next">Next</string>
+    <string name="Prev">Prev</string>
+
+    <string-array name="InventoryTypes">
+        <item>Biscuit</item>
+        <item>Cookie</item>
+        <item>Cake</item>
+        <item>Ingredient</item>
+        <item>Other</item>
+    </string-array>
+
+    <string name="DialogTitle">Confirm</string>
+    <string name="DialogMessage">Do you wish to proceed…?</string>
+    <string name="DialogYes">OK</string>
+    <string name="DialogNo">Cancel!</string>
+</resources>
